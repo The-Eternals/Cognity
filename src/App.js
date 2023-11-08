@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/login';
+import Register from './pages/Register';
+import TestPage from './pages/TestPage';
+import Profile from './pages/Profile';
+import Home from './pages/Home';
+import DoctorHome from './pages/DoctorHome';
+import Dashboard from './pages/Dashboard';
+import ClientAppoint from './pages/ClientAppoint';
+import ClientDashboard from './pages/ClientDashboard';
+import Account from './pages/Account';
+import Navbar from './components/Navbar';
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Router>
+        <Navbar/>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/Login' element={<Login />} />
+              <Route
+                path="/Register"
+                element={<Register/>}
+              />
+              <Route path='/Profile' element={<Profile/>} />
+              <Route path='/Testpage' element={<TestPage/>} />
+              <Route path='/Account' element={<Account/>} />
+              <Route path='/Clientappoint' element={<ClientAppoint/>} />
+              <Route path='/Clientdashboard' element={<ClientDashboard/>} />
+              <Route path='/Dashboard' element={<Dashboard/>}/>
+              <Route path='/Doctorhome' element={<DoctorHome/>}/>
+            </Routes>
+      </Router>
+    </Fragment>
+  )
 }
-
 export default App;
