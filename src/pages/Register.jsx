@@ -1,7 +1,12 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { useNavigate } from "react-router";
 
 const Register = () => {
+
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
     const Navigate = useNavigate();
   return (
     <div className="h-screen flex items-center justify-center bg-[linear-gradient(to_bottom,#434343_0%,black_100%)] p-5">

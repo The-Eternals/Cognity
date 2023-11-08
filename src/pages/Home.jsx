@@ -4,6 +4,8 @@ import { useNavigate } from "react-router";
 import Experieencedetails from "../components/ExperienceDetails";
 import Whychoose from "../components/whyChoose";
 import About from "../components/About"
+import Faq from "../components/Faq"
+import Blog from "../components/Blog";
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -45,7 +47,12 @@ const Home = () => {
         </div>
         <Experieencedetails/>
         <Whychoose/>
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
         <About/>
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <Faq/>
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <Blog/>
       </div>
     </Fragment>
   );

@@ -11,6 +11,7 @@ import Dashboard from './pages/Dashboard';
 import ClientAppoint from './pages/ClientAppoint';
 import ClientDashboard from './pages/ClientDashboard';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
               <Route path='/Dashboard' element={<Dashboard/>}/>
               <Route path='/Doctorhome' element={<DoctorHome/>}/>
             </Routes>
+          <Footer/>
       </Router>
     </Fragment>
   )

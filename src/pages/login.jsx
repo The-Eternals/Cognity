@@ -1,7 +1,10 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { useNavigate } from "react-router";
 
 const Login = () => {
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
   const Navigate = useNavigate();
 
   return (
