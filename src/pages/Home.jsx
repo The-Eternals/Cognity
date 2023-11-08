@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <Fragment>
       <div className="bg-[#fcf8f4]">
-        <div className="flex justify-between px-[10rem]">
-          <div className="w-[34rem] mt-20">
+        <div className="flex justify-between px-[8rem]">
+          <div className="w-[34rem] mt-14">
             <h1 className="text-5xl font-semibold">
               Healthy Minds, Happy <br /> Lives{" "}
               <span className=" text-[#ec744a]">Mental Health</span>
