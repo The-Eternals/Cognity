@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import homeSvg from "../assets/svg/5 - Cardiologist.svg";
 import { useNavigate } from "react-router";
 import Experieencedetails from "../components/ExperienceDetails";
+import Whychoose from "../components/whyChoose";
+import About from "../components/About"
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -42,6 +44,8 @@ const Home = () => {
           </div>
         </div>
         <Experieencedetails/>
+        <Whychoose/>
+        <About/>
       </div>
     </Fragment>
   );
