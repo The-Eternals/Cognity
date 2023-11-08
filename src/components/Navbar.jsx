@@ -1,50 +1,30 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
-
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import Logo from "../assets/svg/g8.svg"
 
 function NavBar() {
 
     const Navigate = useNavigate();
   return (
-    <div className="flex items-center justify-between h-[50px] sticky bg-[white] px-5 py-2.5 border-b-[lightgrey] border-b border-solid top-0">
-      <div className="flex items-center gap-[30px]">
-        <span onClick={()=>Navigate('/')} className="font-[bold] text-xl text-[black] cursor-pointer">Edumo</span>
-
-        <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon />
-        <GridViewOutlinedIcon />
-
-        <div className="flex items-center gap-2.5 border p-[5px] rounded-[5px] border-solid border-[lightgrey]">
-          <SearchOutlinedIcon />
-          <input
-            className="w-[500px] border-[none]"
-            type="text"
-            placeholder="Search..."
-          />
+    <Fragment>
+      <div className="bg-[#fcf8f4] flex justify-between items-center font-semibold h-16 px-[8rem]">
+        <div className="flex items-center gap-3">
+          <img src={Logo} alt="Log" className="w-8 cursor-pointer" onClick={()=> Navigate('/')}/>
+          <p onClick={()=> Navigate('/')} className=" cursor-pointer">Cognity</p>
+        </div>
+        <div>
+          <ul className="flex items-center gap-10">
+            <li onClick={()=>Navigate('/')} className=" cursor-pointer">Home</li>
+            <li onClick={()=>Navigate('/Testpage')} className=" cursor-pointer">Test</li>
+            <li onClick={()=>Navigate('/Profile')} className=" cursor-pointer">Profile</li>
+            <li onClick={()=>Navigate('/Dashboard')} className=" cursor-pointer">Dashboard</li>
+          </ul>
+        </div>
+        <div>
+          <button className="bg-[#ec744a] text-white rounded-xl font-semibold px-8 h-9 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">Contact Us</button>
         </div>
       </div>
-
-      <div className="flex items-center gap-5">
-        <PersonOutlinedIcon />
-        <EmailOutlinedIcon />
-        <NotificationsOutlinedIcon />
-        <div className="flex items-center gap-2.5 font-medium">
-          <img
-            className="w-[30px] h-[30px] object-cover rounded-[50%]"
-            src="https://images.pexels.com/photos/15253379/pexels-photo-15253379/free-photo-of-off-road-car-standing-on-a-snowed-side-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <span>Harshal Rajnoor</span>
-        </div>
-      </div>
-    </div>
+    </Fragment>
   );
 }
 
