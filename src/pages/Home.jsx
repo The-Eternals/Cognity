@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import homeSvg from "../assets/svg/5 - Cardiologist.svg";
 import { useNavigate } from "react-router";
 import Experieencedetails from "../components/ExperienceDetails";
+import Card from "../components/Card";
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -41,7 +42,7 @@ const Home = () => {
             <img src={homeSvg} alt="homeSvg" />
           </div>
         </div>
-        <Experieencedetails/>
+        <Experieencedetails />
       </div>
     </Fragment>
   );

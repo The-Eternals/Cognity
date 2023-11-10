@@ -13,7 +13,6 @@ import ClientDashboard from './pages/ClientDashboard';
 import Account from './pages/Account';
 import Navbar from './components/Navbar';
 
-
 const App = () => {
 
   return (
