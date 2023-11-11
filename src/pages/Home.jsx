@@ -3,6 +3,10 @@ import homeSvg from "../assets/svg/5 - Cardiologist.svg";
 import { useNavigate } from "react-router";
 import Experieencedetails from "../components/ExperienceDetails";
 import Card from "../components/Card";
+import Banner from "../components/Banner";
+import NewsLetter from "../components/NewsLetter";
+import Pricing from "../components/Pricing";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -44,6 +48,11 @@ const Home = () => {
         </div>
         <Experieencedetails />
       </div>
+      <Card />
+      <Banner />
+      <NewsLetter />
+      <Pricing />
+      <Testimonials />
     </Fragment>
   );
 };
