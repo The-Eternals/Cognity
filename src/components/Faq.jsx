@@ -5,7 +5,7 @@ const Faq = () => {
     <Fragment>
       <div className=" px-[20rem] justify-center items-center flex flex-col py-20">
         <p className=" font-semibold">Faq</p>
-        <h1 className=" font-semibold text-4xl py-10">
+        <h1 className=" font-semibold text-4xl py-10 text-center">
           Navigating Mental Health Consultation Commonly Asked Questions
         </h1>
         <div>

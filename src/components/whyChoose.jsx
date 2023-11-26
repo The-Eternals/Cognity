@@ -7,7 +7,7 @@ const Whychoose = () => {
     <div className="px-[8rem] flex flex-col justify-center items-center py-16">
       <div className="flex flex-col justify-center items-center">
         <p className=" font-semibold">Why?</p>
-        <h4 className=" text-4xl font-bold py-6 transform capitalize">
+        <h4 className="font-bold text-[2.6rem] text-center px-20">
           why our mental health consultants are <br /> the best choice
         </h4>
       </div>

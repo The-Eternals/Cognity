@@ -13,13 +13,11 @@ import ClientDashboard from './pages/ClientDashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-
 const App = () => {
 
   return (
     <Fragment>
       <Router>
-        <Navbar/>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/Login' element={<Login />} />
