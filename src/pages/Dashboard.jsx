@@ -1,7 +1,12 @@
+import { Fragment } from "react";
+import Navbar2 from "../components/Navbar2"
+
 const Dashboard = () => {
-    return(
-        <h1>This is a Dashboard</h1>
-    )
-}
+  return (
+    <Fragment>
+      <Navbar2 title="Dashboard" />
+    </Fragment>
+  );
+};
 
 export default Dashboard;

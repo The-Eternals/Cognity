@@ -7,11 +7,17 @@ import Banner from "../components/Banner";
 import NewsLetter from "../components/NewsLetter";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
+import Whychoose from "../components/whyChoose";
+import About from "../components/About";
+import Faq from "../components/Faq";
+import Blog from "../components/Blog";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const Navigate = useNavigate();
   return (
     <Fragment>
+      <Navbar/>
       <div className="bg-[#fcf8f4]">
         <div className="flex justify-between px-[8rem]">
           <div className="w-[34rem] mt-14">
@@ -47,12 +53,20 @@ const Home = () => {
           </div>
         </div>
         <Experieencedetails />
+        <Whychoose />
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <About />
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <Card />
+        <Banner />
+        <NewsLetter />
+        <Pricing />
+        <Testimonials />
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <Faq />
+        <hr className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] h-3" />
+        <Blog />
       </div>
-      <Card />
-      <Banner />
-      <NewsLetter />
-      <Pricing />
-      <Testimonials />
     </Fragment>
   );
 };

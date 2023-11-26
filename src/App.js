@@ -10,15 +10,14 @@ import DoctorHome from './pages/DoctorHome';
 import Dashboard from './pages/Dashboard';
 import ClientAppoint from './pages/ClientAppoint';
 import ClientDashboard from './pages/ClientDashboard';
-import Account from './pages/Account';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
 
   return (
     <Fragment>
       <Router>
-        <Navbar/>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/Login' element={<Login />} />
@@ -28,12 +27,12 @@ const App = () => {
               />
               <Route path='/Profile' element={<Profile/>} />
               <Route path='/Testpage' element={<TestPage/>} />
-              <Route path='/Account' element={<Account/>} />
               <Route path='/Clientappoint' element={<ClientAppoint/>} />
               <Route path='/Clientdashboard' element={<ClientDashboard/>} />
               <Route path='/Dashboard' element={<Dashboard/>}/>
               <Route path='/Doctorhome' element={<DoctorHome/>}/>
             </Routes>
+          <Footer/>
       </Router>
     </Fragment>
   )
