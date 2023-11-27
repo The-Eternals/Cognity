@@ -8,7 +8,7 @@ function NavBar2(props) {
   return (
     <Fragment>
       <div className="bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] text-white">
-        <div className=" flex justify-between items-center font-semibold h-16 px-[8rem]">
+        <div className=" flex justify-between items-center font-semibold h-16 px-[8rem] ">
           <div className="flex items-center gap-3">
             <img
               src={Logo}
@@ -38,7 +38,7 @@ function NavBar2(props) {
                 onClick={() => Navigate("/Profile")}
                 className=" cursor-pointer"
               >
-                Profile
+                Pricing
               </li>
               <li
                 onClick={() => Navigate("/Dashboard")}
@@ -49,7 +49,7 @@ function NavBar2(props) {
             </ul>
           </div>
           <div>
-            <button className="bg-[#ec744a] text-white rounded-xl font-semibold px-8 h-9 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+            <button onClick={() => Navigate("/ContactUs")} className="bg-[#ec744a] text-white rounded-xl font-semibold px-8 h-9 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
               Contact Us
             </button>
           </div>

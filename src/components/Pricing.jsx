@@ -1,6 +1,8 @@
+import { Fragment } from "react";
+
 const Pricing = () => {
   return (
-    <>
+    <Fragment>
       <div className="px-[8rem] flex flex-col gap-16">
         <div className=" flex justify-center items-center ">
           <div className="w-[80%] flex flex-col gap-5">
@@ -97,7 +99,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

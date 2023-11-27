@@ -2,9 +2,11 @@ import { Fragment } from "react"
 import Health1 from "../assets/Images/Mental-health1.jpg"
 import Health2 from "../assets/Images/Mental-health2.avif"
 import Health3 from "../assets/Images/Mental-health3.avif"
+import { useNavigate } from "react-router"
 
 
 const Blog = () => {
+    const Navigate = useNavigate()
     return(
         <Fragment>
             <div className=" px-[8rem] justify-center flex flex-col items-center py-12">
@@ -27,7 +29,7 @@ const Blog = () => {
                         <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p>
                     </div>
                 </div>
-                <button className=" bg-black text-white rounded-xl font-bold px-6 h-10 hover:bg-white hover:text-black hover:border-black hover:border-2 mt-6">See More</button>
+                <button onClick={() => Navigate("/Blog")} className=" bg-black text-white rounded-xl font-bold px-6 h-10 hover:bg-white hover:text-black hover:border-black hover:border-2 mt-6">See More</button>
             </div>
         </Fragment>
     )

@@ -10,8 +10,10 @@ import DoctorHome from './pages/DoctorHome';
 import Dashboard from './pages/Dashboard';
 import ClientAppoint from './pages/ClientAppoint';
 import ClientDashboard from './pages/ClientDashboard';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Blog from './pages/Blog';
+import ContactUs from './pages/ContactUs';
+import AboutUs from './pages/AboutUs';
 
 const App = () => {
 
@@ -27,6 +29,9 @@ const App = () => {
               />
               <Route path='/Profile' element={<Profile/>} />
               <Route path='/Testpage' element={<TestPage/>} />
+              <Route path='/Blog' element={<Blog/>}/>
+              <Route path='/ContactUs' element={<ContactUs/>}/>
+              <Route path='/AboutUs' element={<AboutUs/>}/>
               <Route path='/Clientappoint' element={<ClientAppoint/>} />
               <Route path='/Clientdashboard' element={<ClientDashboard/>} />
               <Route path='/Dashboard' element={<Dashboard/>}/>
