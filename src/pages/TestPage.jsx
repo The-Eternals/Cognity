@@ -1,7 +1,12 @@
+import NewsLetter from "../components/NewsLetter";
+import Testimonials from "../components/Testimonials";
 const TestPage = () => {
-    return(
-        <h1>This is a TestPage</h1>
-    )
-}
+  return (
+    <div className="">
+      <NewsLetter />
+      <Testimonials />
+    </div>
+  );
+};
 
 export default TestPage;
