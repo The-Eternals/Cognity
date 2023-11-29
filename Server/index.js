@@ -7,6 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// PORT NUMBER
+const PORT_NUMBER = 3000;
+
 mongoose.connect("mongodb://127.0.0.1:27017/Cognity");
 
 app.post("/Login", (req, res) => {
@@ -30,6 +33,6 @@ app.post("/Register", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT_NUMBER, () => {
+  console.log(`Server is running on port ${PORT_NUMBER}`);
 });
