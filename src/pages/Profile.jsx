@@ -1,12 +1,16 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Navbar2 from "../components/Navbar2";
 import NewsLetter from "../components/NewsLetter";
 import Testimonials from "../components/Testimonials";
 
 const Profile = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Fragment>
-      <Navbar2 title="Profile" />
+      <Navbar2 title="Pricing" />
       <div className=" flex justify-between items-center  px-[8rem]  w-full flex-col gap-8 pt-10">
         <div className="flex flex-col justify-center align-center gap-5 w-full">
           <p className="font-bold text-2xl  text-center">Pricing</p>

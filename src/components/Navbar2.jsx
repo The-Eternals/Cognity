@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/svg/g8.svg";
+import logo1 from "../assets/svg/navlogo.svg"
 
 
 function NavBar2(props) {
@@ -11,7 +12,7 @@ function NavBar2(props) {
         <div className=" flex justify-between items-center font-semibold h-16 px-[8rem] ">
           <div className="flex items-center gap-3">
             <img
-              src={Logo}
+              src={logo1}
               alt="Log"
               className="w-7 cursor-pointer"
               onClick={() => Navigate("/")}

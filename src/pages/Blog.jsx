@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Navbar2 from "../components/Navbar2";
 import NewsLetter from "../components/NewsLetter";
 import Testimonials from "../components/Testimonials";
@@ -7,6 +7,10 @@ import Health2 from "../assets/Images/Mental-health2.avif";
 import Health3 from "../assets/Images/Mental-health3.avif";
 
 const Blog = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Fragment>
       <Navbar2 title="Blog" />

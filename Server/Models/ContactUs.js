@@ -7,6 +7,6 @@ const ContactUsSchema = new mongoose.Schema({
   phoneNumber: Number,
 });
 
-const ContactModel = mongoose.model("Register", ContactUsSchema);
+const ContactModel = mongoose.model.ContactUsSchema || ("Register", ContactUsSchema);
 
 module.exports = ContactModel;

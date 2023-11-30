@@ -1,7 +1,36 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import NavBar2 from "../components/Navbar2";
+import { useNavigate } from "react-router";
+import axios from "axios";
 
 const ContactUs = () => {
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [phoneNumber, setPhoneNumber] = useState();
+
+  const sendContactData = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3000/Register", {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+      })
+      .then((result) => {
+        console.log(result);
+        alert("Data sent successfully")
+        Navigate("/")
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const Navigate = useNavigate();
   return (
     <Fragment>
       <NavBar2 title="Contact Us" />
@@ -29,7 +58,7 @@ const ContactUs = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <form onSubmit={sendContactData}>
           <div className=" flex justify-between gap-20">
             <div className="flex flex-col gap-2">
               <label className=" text-xl font-semibold" htmlFor="">
@@ -39,6 +68,7 @@ const ContactUs = () => {
                 className=" border-2 border-black rounded-full w-72 py-2 px-5"
                 type="text"
                 placeholder="Your first name"
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -49,6 +79,7 @@ const ContactUs = () => {
                 className=" border-2 border-black rounded-full w-72 py-2 px-5"
                 type="text"
                 placeholder="Your Last name"
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
           </div>
@@ -60,7 +91,8 @@ const ContactUs = () => {
               <input
                 className=" border-2 border-black rounded-full w-72 py-2 px-5"
                 type="email"
-                placeholder="Your first name"
+                placeholder="Your Email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -70,7 +102,8 @@ const ContactUs = () => {
               <input
                 className=" border-2 border-black rounded-full w-72 py-2 px-5"
                 type="number"
-                placeholder="Your Last name"
+                placeholder="Your Phone Number"
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
           </div>
@@ -89,7 +122,7 @@ const ContactUs = () => {
               Send Message
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </Fragment>
   );
