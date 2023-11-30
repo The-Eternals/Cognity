@@ -5,7 +5,7 @@ import Testimonials from "../components/Testimonials";
 import NavBar2 from "../components/Navbar2";
 import Card from "../components/Card";
 // import "../style.css"
-import { Widgets } from "@mui/icons-material";
+// import { Widgets } from "@mui/icons-material";
 
 const TestPage = () => {
 
@@ -204,32 +204,35 @@ const TestPage = () => {
   return (
     <Fragment>
       <NavBar2 title = "Test"/>
+      
       <div className="startTest">
       <div className="app" >
       {showScore ? (
         <div className=" h-96 w-full flex justify-center items-center">
-        <div className="h-80 w-80 bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex justify-center items-center p-5 rounded-2xl text-2xl font-semibold text-white">
-          You scored {score} out of 48 <br/>
+        <div className="h-80 w-[70rem] bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex justify-center items-center p-5 rounded-2xl text-2xl font-semibold text-white">
+          You scored {score} out of 48, <br/>
 		  You have {symptoms} symptoms of
           depression
         </div>
         </div>
       ) : (
         <div className=" h-[500px] w-full flex justify-center  items-center rounded-xl   ">
-          <div className="h-96 w-[600px] bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex justify-center items-center  gap-14 p-10 rounded-2xl">
+          <div className="h-80 w-[70rem] bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex flex-col justify-center items-start pl-40  gap-14 p-10 rounded-2xl">
+          <h1 className=" text-white font-bold text-2xl border-2 border-white rounded-xl bg-[#ec744a] cursor-pointer px-10 py-2">Take a Test</h1>
           <div className=" ">
+            
             <div className="">
               <span className="text-base">Question {currentQuestion + 1}</span>/{questions.length}
             </div>
-            <div className="text-2xl font-semibold">
+            <div className="text-2xl font-semibold ">
               {questions[currentQuestion].questionText}
             </div>
           </div>
-          <div className="flex flex-col border-black  gap-5 text-white font-semibold">
+          <div className="flex  border-black  gap-5 text-white font-semibold">
             {questions[currentQuestion].answerOptions.map((answerOption) => (
               <button
                 onClick={() => handleAnswerOptionClick(answerOption.marks)}
-                className="border-2 border-black rounded-xl p-2 bg-black"
+                className="border-2 border-black rounded-xl p-2 bg-black hover:bg-white hover:text-black hover:font-semibold"
               >
                 {answerOption.answerText}
               </button>

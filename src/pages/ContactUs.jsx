@@ -20,8 +20,8 @@ const ContactUs = () => {
       })
       .then((result) => {
         console.log(result);
-        alert("Data sent successfully")
-        Navigate("/")
+        alert("Data sent successfully");
+        Navigate("/");
       })
       .catch((err) => console.log(err));
   };
@@ -111,11 +111,14 @@ const ContactUs = () => {
             <label className=" text-xl font-semibold" htmlFor="">
               Message
             </label>
-            <input
-              className=" border-2 border-black rounded-xl px-5 h-40"
-              type="text"
+            <textarea
+              className=" border-2 border-black rounded-xl"
               placeholder="your message (Optional)"
-            />
+              name=""
+              id=""
+              cols="30"
+              rows="6"
+            ></textarea>
           </div>
           <div className=" flex flex-col p-12 justify-center items-center">
             <button className="bg-[#ec744a] text-white rounded-xl font-semibold px-8 h-9 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">

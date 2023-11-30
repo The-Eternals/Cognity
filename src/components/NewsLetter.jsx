@@ -1,4 +1,8 @@
+
 const NewsLetter = () => {
+  const subHandler = () => {
+    alert("Subscribed Successfully")
+  }
   return (
     <>
       <div
@@ -25,7 +29,7 @@ const NewsLetter = () => {
               placeholder="Your email"
               className="outline-none w-full  py-1 px-3 rounded-l-[30px] bg-transparent placeholder:text-white"
             />
-            <button className="outline-none bg-[#EC744A] text-white w-80 rounded-r-[30px] text-center">
+            <button onClick={subHandler} className="outline-none bg-[#EC744A] text-white w-80 rounded-r-[30px] text-center">
               Subscribe Us
             </button>
           </div>
