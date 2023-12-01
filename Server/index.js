@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const CognityModel = require("./Models/CogRes");
+const ContactModel = require("./Models/ContactUs")
 
 const app = express();
 app.use(express.json());
@@ -33,6 +34,16 @@ app.post("/Register", (req, res) => {
     .catch((err) => res.json(err));
 });
 
+app.post("/ContactUs", (req,res) => {
+  const { firstName, lastName, email, phoneNumber} = req.body;
+
+  ContactModel.create({ firstName, lastName, email, phoneNumber}).then((contact) => res.json(contact)).catch((err) => res.json(err))
+})
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+=======
 app.listen(PORT_NUMBER, () => {
   console.log(`Server is running on port ${PORT_NUMBER}`);
+
 });

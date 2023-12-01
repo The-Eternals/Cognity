@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import AboutImg from "../assets/svg/Frame 80.svg";
 import NavBar2 from "../components/Navbar2";
 import Whychoose from "../components/whyChoose";
@@ -9,6 +9,10 @@ import Testimonials from "../components/Testimonials";
 import AboutImg2 from "../assets/svg/about2.svg";
 
 const AboutUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Fragment>
       <NavBar2 title="About Us" />
