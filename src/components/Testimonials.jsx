@@ -19,22 +19,16 @@ const Testimonials = () => {
           >
             <img src={img} className="rounded-full w-20 h-20" />
             <p className="text-white text-sm text-center">
-              Lorem ipsum dolor sit amet consectetur. Convallis est urna
-              adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
-              at quam adipiscing feugiat interdum mattis. Placerat donec risus
-              diam.
+              This platform has been a lifeline. The resources and guidance offered here truly transformed my approach to mental health. Grateful for the support it provides.
             </p>
-            <span className=" text-white font-bold">George J - Client</span>
+            <span className=" text-white font-bold">- Sarah</span>
           </div>
           <div className="flex flex-col items-center border-2 border-black rounded-3xl p-10 w-80 h-96 gap-6">
             <img src={img} className="rounded-full w-20 h-20 " />
             <p className="text-sm text-center">
-              Lorem ipsum dolor sit amet consectetur. Convallis est urna
-              adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
-              at quam adipiscing feugiat interdum mattis. Placerat donec risus
-              diam.
+              Incredible content! From articles to expert advice, this website is a safe haven. It's like having a trusted friend guiding me through tough times.
             </p>
-            <span className="font-bold">George J - Client</span>
+            <span className="font-bold">Alex</span>
           </div>
         </div>
       </div>

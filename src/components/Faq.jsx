@@ -14,14 +14,8 @@ const Faq = () => {
               <p className=" font-bold text-xl">
                 What is a mental health consultant?
               </p>
-              <p className=" text-sm mt-5">
-                Lorem ipsum dolor sit amet consectetur. Convallis est urna
-                adipiscing fringilla nulla diam lorem non mauris. Ultrices
-                aliquet at quam adipiscing feugiat interdum mattis. Placerat
-                donec risus diam sed et. A in ullamcorper ipsum justo vestibulum
-                sit cursus. A risus donec eget enim aliquet integer cursus et.
-                Phasellus ac augue ultricies sem aliquam faucibus sem non
-                volutpat.
+              <p className=" text-sm mt-5 text-justify">
+              A mental health consultant is a professional who offers guidance, expertise, and support to individuals, organizations, or businesses seeking to improve mental health practices. They provide tailored strategies, training, and advice, fostering healthier environments and enhancing understanding and management of mental health issues within various settings.
               </p>
             </div>
             <div>

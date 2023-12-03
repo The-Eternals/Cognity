@@ -16,17 +16,17 @@ const Blog = () => {
                     <div>
                         <img src={Health1} alt="" className=" w-[22rem] h-[24rem] rounded-2xl border-2 border-black" />
                         <h6 className=" text-2xl font-semibold py-3">How Mental Health Consultants Can Help...</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p> */}
                     </div>
                     <div>
                         <img src={Health3} alt="" className=" w-[22rem] h-[24rem] rounded-2xl border-2 border-black"/>
                         <h6 className=" text-2xl font-semibold py-3">How Mental Health Consultants Can Help...</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p> */}
                     </div>
                     <div>
                         <img src={Health2} alt="" className=" w-[22rem] h-[24rem] rounded-2xl border-2 border-black"/>
                         <h6 className=" text-2xl font-semibold py-3">How Mental Health Consultants Can Help...</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla See more</p> */}
                     </div>
                 </div>
                 <button onClick={() => Navigate("/Blog")} className=" bg-black text-white rounded-xl font-bold px-6 h-10 hover:bg-white hover:text-black hover:border-black hover:border-2 mt-6">See More</button>

@@ -60,10 +60,7 @@ function NavBar2(props) {
           <div>
             <h1 className="text-3xl font-bold">{props.title}</h1>
             <p className=" py-5 text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-              quaerat sunt, est cumque dolorum distinctio velit quibusdam ut
-              ducimus eligendi dicta earum, animi atque! Atque assumenda
-              suscipit unde voluptatibus quo.
+            Our mental health website offers diverse services, from counseling and therapy to educational resources and community support, fostering well-being and empowerment for all individuals seeking guidance.
             </p>
           </div>
         </div>
