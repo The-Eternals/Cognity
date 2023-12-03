@@ -22,7 +22,7 @@ import Parent from './components/tests/Parent';
 import Psychosis from './components/tests/Psychosis';
 import Ptsd from './components/tests/Ptsd';
 import Youth from './components/tests/Youth';
-
+import Questions from './pages/Questions';
 const App = () => {
 
   return (
@@ -41,6 +41,7 @@ const App = () => {
               <Route path='/ContactUs' element={<ContactUs/>}/>
               <Route path='/AboutUs' element={<AboutUs/>}/>
               <Route path='/Clientappoint' element={<ClientAppoint/>} />
+              <Route path='/Questions' element={<Questions/>} />
               <Route path='/Clientdashboard' element={<ClientDashboard/>} />
               <Route path='/Dashboard' element={<Dashboard/>}/>
               <Route path='/Doctorhome' element={<DoctorHome/>}/>
