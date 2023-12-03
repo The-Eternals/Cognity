@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import {Depression} from './tests/Depression'
 const TakeTest = () => {
     const questions = [
         {
