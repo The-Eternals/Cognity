@@ -46,6 +46,12 @@ const Home = () => {
               >
                 Register
               </button>
+              <button
+                onClick={() => Navigate("/TestPage")}
+                className=" bg-[#017d6e] text-white rounded-xl font-semibold px-8 h-10 hover:text-[#017d6e] hover:border-[#017d6e] hover:bg-white hover:border-2"
+              >
+                Take a Test
+              </button>
             </div>
           </div>
           <div className="w-[34rem] mt-[6.4rem]">
