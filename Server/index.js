@@ -13,6 +13,9 @@ connection();
 app.use(express.json());
 app.use(cors());
 
+// PORT NUMBER
+const PORT_NUMBER = 3000;
+
 // routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
