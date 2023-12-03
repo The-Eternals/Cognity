@@ -8,7 +8,7 @@ const Pricing = () => {
           <div className="w-[80%] flex flex-col gap-5">
             <p className="text-center text-xl font-semibold">Pricing</p>
             <h3 className="text-center text-5xl font-semibold">
-              Choose of Mental Health Consultation Packages for Your Needs
+              Choose the Mental Health Consultation Packages for Your Needs
             </h3>
           </div>
         </div>
@@ -28,9 +28,13 @@ const Pricing = () => {
                   id=""
                 />
                 <div className="">
-                  <h5 className="text-white font-semibold text-2xl">Basic</h5>
-                  <p className=" text-white w-52">
-                    Lorem ipsum dolor sit amet consectetur.{" "}
+                  <h5 className="text-white font-semibold text-3xl">Basic</h5>
+                  <p className=" text-white">
+                    <ul className="list-disc" >
+                      <li>Access to articles and self-help resources.</li>
+                      <li>Weekly newsletter subscription.</li>
+                      <li>Limited access to forums.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -38,7 +42,7 @@ const Pricing = () => {
               <div className=" flex flex-col gap-5">
                 <p className="text-white text-3xl font-semibold">
                   {" "}
-                  $69.99/ <span className="text-sm"> Month</span>
+                  $9.99/ <span className="text-sm"> Month</span>
                 </p>
                 <button className="text-white text-sm p-2 bg-[#EC744A] px-8 py-3 rounded-3xl text-center">
                   See pricing
@@ -57,9 +61,13 @@ const Pricing = () => {
                   id=""
                 />
                 <div className="">
-                  <h5 className="font-semibold text-2xl">Basic</h5>
-                  <p className="  w-52">
-                    Lorem ipsum dolor sit amet consectetur.{" "}
+                  <h5 className="font-semibold text-3xl">Standard Plan</h5>
+                  <p className="  ">
+                    <ul className="list-disc" >
+                      <li>Full access to articles, forums, and self-help tools.</li>
+                      <li>Bi-weekly live webinars or Q&A sessions.</li>
+                      <li>Exclusive content and downloadable resources.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -67,7 +75,7 @@ const Pricing = () => {
               <div className=" flex flex-col gap-5">
                 <p className=" text-3xl font-semibold">
                   {" "}
-                  $69.99/ <span className="text-sm"> Month</span>
+                  $29.99/ <span className="text-sm"> Month</span>
                 </p>
               </div>
             </div>
@@ -82,9 +90,13 @@ const Pricing = () => {
                   id=""
                 />
                 <div className="">
-                  <h5 className=" font-semibold text-2xl">Basic</h5>
-                  <p className=" w-52">
-                    Lorem ipsum dolor sit amet consectetur.{" "}
+                  <h5 className=" font-semibold text-3xl">Premium Plan</h5>
+                  <p className=" ">
+                    <ul className="list-disc" >
+                      <li>Unlimited access to all features.</li>
+                      <li>Monthly one-on-one sessions with a certified therapist or counselor.</li>
+                      <li>Priority support and personalized content suggestions.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -92,7 +104,7 @@ const Pricing = () => {
               <div className=" flex flex-col gap-5">
                 <p className=" text-3xl font-semibold">
                   {" "}
-                  $69.99/ <span className="text-sm"> Month</span>
+                  $59.99/ <span className="text-sm"> Month</span>
                 </p>
               </div>
             </div>

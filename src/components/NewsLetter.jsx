@@ -17,10 +17,7 @@ const NewsLetter = () => {
               Join To Our Newsletter
             </h2>
             <p className=" text-white text-center ">
-              Lorem ipsum dolor sit amet consectetur. Convallis est urna
-              adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
-              at quam adipiscing feugiat interdum mattis. Placerat donec risus
-              diam sed et. A in ullamcorper ipsum.
+            Subscribe to our mental health newsletter for insightful articles, expert tips, uplifting stories, and practical strategies to nurture your well-being and navigate life's challenges with resilience.
             </p>
           </div>
           <div className="flex border-2 border-gray-300 border-solid rounded-[30px] w-1/2 h-12 ">

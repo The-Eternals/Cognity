@@ -17,7 +17,7 @@ const TestPage = () => {
 
   return (
     <Fragment>
-      <NavBar2 title = "Test"/>
+      <NavBar2 title="Test" />
       <div className=" flex justify-between items-center  px-[8rem]  w-full flex-col gap-16 pt-10">
         <div className="flex flex-col justify-center align-center gap-5 w-full">
           <h2 className="font-bold text-[2.6rem] text-center px-20 ">
@@ -37,12 +37,12 @@ const TestPage = () => {
                   Addiction Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Addiction Assessment: Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/AddictionTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/AddictionTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
@@ -58,19 +58,19 @@ const TestPage = () => {
                   Anxiety Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Anxiety Assessment: Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/AnxietyTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/AnxietyTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
           <div
             className=" w-[300px] h-[350px] left-[412px] top-[278px] rounded-[30px] shadow-xl shadow-gray-600"
             style={{
-              backgroundImage: `linear-gradient(180.16deg,rgba(39, 39, 39, 0.5) -55.32%,#000000 182.01%),url(${img1}) `,
+              backgroundImage: `linear-gradient(180.16deg,rgba(39, 39, 39, 0.5) -55.32%,#000000 182.01%),url({}) `,
             }}
           >
             <div className="flex flex-col items-center gap-[50px] w-full h-full px-10  py-16">
@@ -79,12 +79,12 @@ const TestPage = () => {
                   Depression Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Depression Assessment: Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/DepressionTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/DepressionTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
@@ -100,12 +100,12 @@ const TestPage = () => {
                   Psychosis Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Psychosis Assessment: Check Now.
                 </p>
               </div>
-                <button onClick={()=>Navigate("/PsychosisTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/PsychosisTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
         </div>
@@ -122,12 +122,12 @@ const TestPage = () => {
                   Youth Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Youth Assessment: Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/YouthTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/YouthTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
@@ -143,19 +143,19 @@ const TestPage = () => {
                   Parent Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Parent Assessment (for child): Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/ParentTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/ParentTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
           <div
             className=" w-[300px] h-[350px] left-[412px] top-[278px] rounded-[30px] shadow-xl shadow-gray-600"
             style={{
-              backgroundImage: `linear-gradient(180.16deg,rgba(39, 39, 39, 0.5) -55.32%,#000000 182.01%),url(${img1}) `,
+              backgroundImage: `linear-gradient(180.16deg,rgba(39, 39, 39, 0.5) -55.32%,#000000 182.01%),url({}) `,
             }}
           >
             <div className="flex flex-col items-center gap-[50px] w-full h-full px-10  py-16">
@@ -164,12 +164,12 @@ const TestPage = () => {
                   Bipolar Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick Bipolar Assessment: Check Now.
                 </p>
               </div>
-              <button onClick={()=>Navigate("/BipolarTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/BipolarTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
 
@@ -185,12 +185,12 @@ const TestPage = () => {
                   PTSD Test
                 </h2>
                 <p className="text-white flex-none order-none grow-0 text-center">
-                  Lorem ipsum dolor sit amet consectetur Convallis est
+                  Quick PTSD Assessment: Check Now.
                 </p>
               </div>
-                <button onClick={()=>Navigate("/PtsdTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
-                  Take a Test
-                </button>
+              <button onClick={() => Navigate("/PtsdTest")} className="bg-[#ec744a] text-white rounded-full text-lg font-semibold px-10 py-2.5 hover:bg-white hover:text-[#ec744a] hover:border-[#ec744a] hover:border-2">
+                Take a Test
+              </button>
             </div>
           </div>
         </div>

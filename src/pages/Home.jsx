@@ -17,7 +17,7 @@ const Home = () => {
   const Navigate = useNavigate();
   return (
     <Fragment>
-      <Navbar/>
+      <Navbar />
       <div className="bg-[#fcf8f4]">
         <div className="flex justify-between px-[8rem]">
           <div className="w-[34rem] mt-14">
@@ -27,10 +27,8 @@ const Home = () => {
               <br />
               Consultancy
             </h1>
-            <p className="py-10">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              vel expedita optio velit quo voluptates molestias suscipit ratione
-              doloribus facere.
+            <p className="py-10 text-justify ">
+              "Mindfulness is the compass guiding us towards inner peace and resilience in life's turbulent seas. Embracing mental health is not a weakness but a courageous act of self-care and self-discovery."
             </p>
             {/* <button className=" bg-black text-white rounded-xl font-semibold px-8 h-10">Get Started</button> */}
             <div className="flex justify-start items-center gap-8 mt-10">

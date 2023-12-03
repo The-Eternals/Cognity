@@ -28,10 +28,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
           <div>
             <img
@@ -42,10 +42,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
           <div>
             <img
@@ -56,10 +56,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
         </div>
         <div className=" flex justify-between gap-20 pt-20">
@@ -72,10 +72,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
           <div>
             <img
@@ -86,10 +86,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
           <div>
             <img
@@ -100,10 +100,10 @@ const Blog = () => {
             <h6 className=" text-2xl font-semibold py-3">
               How Mental Health Consultants Can Help...
             </h6>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla See more
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex w-full justify-between p-10">
