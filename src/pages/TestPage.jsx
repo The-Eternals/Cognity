@@ -185,15 +185,15 @@ const TestPage = () => {
   let symptoms = "no";
 
   if (score <= 9) {
-    symptoms = "high";
-  } else if (score <= 18 && score<=9) {
+    symptoms = "No";
+  } else if (score <= 18 && score>=9) {
     symptoms = "mild";
-  } else if (score <= 27 && score<=18) {
-    symptoms = "moderate high";
-  } else if (score <= 36 && score<=27) {
-    symptoms = "moderately low";
-  }else if(score <= 48 && score<=36){
-	symptoms = "no";
+  } else if (score <= 27 && score>=18) {
+    symptoms = "moderate";
+  } else if (score <= 36 && score>=27) {
+    symptoms = "moderately high";
+  }else if(score <= 48 && score>=36){
+	symptoms = "High";
   }
 
 
@@ -217,7 +217,7 @@ const TestPage = () => {
         </div>
       ) : (
         <div className=" h-[500px] w-full flex justify-center  items-center rounded-xl   ">
-          <div className="h-80 w-[70rem] bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex flex-col justify-center items-start pl-40  gap-14 p-10 rounded-2xl">
+          <div className="h-96 w-[70rem] bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e] flex flex-col justify-center items-start pl-40  gap-14 p-10 rounded-2xl">
           <h1 className=" text-white font-bold text-2xl border-2 border-white rounded-xl bg-[#ec744a] cursor-pointer px-10 py-2">Take a Test</h1>
           <div className=" ">
             

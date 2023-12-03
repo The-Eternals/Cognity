@@ -1,42 +1,21 @@
+require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const CognityModel = require("./Models/CogRes");
-const ContactModel = require("./Models/ContactUs")
-
 const app = express();
+const cors = require("cors");
+const connection = require("./db");
+const userRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth");
+
+// database connection
+connection();
+
+// middlewares
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/Cognity");
+// routes
+app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
 
-app.post("/Login", (req, res) => {
-  const { userName, password } = req.body;
-  CognityModel.findOne({ userName: userName }).then((user) => {
-    if (user) {
-      if (user.password === password) {
-        res.json("Login Successfully");
-      } else {
-        res.json("incorrect password");
-      }
-    } else {
-      res.json("User Not Found");
-    }
-  });
-});
-
-app.post("/Register", (req, res) => {
-  CognityModel.create(req.body)
-    .then((regis) => res.json(regis))
-    .catch((err) => res.json(err));
-});
-
-app.post("/ContactUs", (req,res) => {
-  const { firstName, lastName, email, phoneNumber} = req.body;
-
-  ContactModel.create({ firstName, lastName, email, phoneNumber}).then((contact) => res.json(contact)).catch((err) => res.json(err))
-})
-
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Listening on port ${port}...`));
