@@ -5,20 +5,22 @@ const cors = require("cors");
 const connection = require("./db");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
+const examRoutes = require("./routes/exams");
 
-// database connection
+
 connection();
 
-// middlewares
+
 app.use(express.json());
 app.use(cors());
 
-// PORT NUMBER
+
 const PORT_NUMBER = 3000;
 
-// routes
+
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/exams", examRoutes);
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));

@@ -14,6 +14,14 @@ import Footer from './components/Footer';
 import Blog from './pages/Blog';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
+import Addiction from './components/tests/Addiction';
+import Anxiety from './components/tests/Anxiety';
+import Bipolar from './components/tests/Bipolar';
+import Depression from './components/tests/Depression';
+import Parent from './components/tests/Parent';
+import Psychosis from './components/tests/Psychosis';
+import Ptsd from './components/tests/Ptsd';
+import Youth from './components/tests/Youth';
 
 const App = () => {
 
@@ -36,6 +44,14 @@ const App = () => {
               <Route path='/Clientdashboard' element={<ClientDashboard/>} />
               <Route path='/Dashboard' element={<Dashboard/>}/>
               <Route path='/Doctorhome' element={<DoctorHome/>}/>
+              <Route path='/AddictionTest' element={<Addiction/>}/>
+              <Route path='/AnxietyTest' element={<Anxiety/>}/>
+              <Route path='/BipolarTest' element={<Bipolar/>}/>
+              <Route path='/DepressionTest' element={<Depression/>}/>
+              <Route path='/ParentTest' element={<Parent/>}/>
+              <Route path='/PsychosisTest' element={<Psychosis/>}/>
+              <Route path='/PtsdTest' element={<Ptsd/>}/>
+              <Route path='/YouthTest' element={<Youth/>}/>
             </Routes>
           <Footer/>
       </Router>
