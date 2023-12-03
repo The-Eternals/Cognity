@@ -14,38 +14,44 @@ function NavBar2(props) {
             <img
               src={logo1}
               alt="Log"
-              className="w-7 cursor-pointer"
+              className="cursor-pointer w-7"
               onClick={() => Navigate("/")}
             />
             <p
               onClick={() => Navigate("/")}
-              className=" cursor-pointer text-2xl font-bold"
+              className="text-2xl font-bold cursor-pointer "
             >
               Cognity
             </p>
           </div>
           <div>
             <ul className="flex items-center gap-10">
-              <li onClick={() => Navigate("/")} className=" cursor-pointer">
+              <li onClick={() => Navigate("/")} className="cursor-pointer ">
                 Home
               </li>
               <li
                 onClick={() => Navigate("/Testpage")}
-                className=" cursor-pointer"
+                className="cursor-pointer "
               >
                 Test
               </li>
               <li
                 onClick={() => Navigate("/Profile")}
-                className=" cursor-pointer"
+                className="cursor-pointer "
               >
                 Pricing
               </li>
               <li
                 onClick={() => Navigate("/Dashboard")}
-                className=" cursor-pointer"
+                className="cursor-pointer "
               >
                 Dashboard
+              </li>
+              <li
+                onClick={() => Navigate("/Questions")}
+                className="cursor-pointer "
+              >
+                FAQ - Self Help
               </li>
             </ul>
           </div>
@@ -56,10 +62,10 @@ function NavBar2(props) {
           </div>
         </div>
         <div className="flex px-[8rem] gap-10 p-10 items-center">
-          <div className="w-1 h-52 bg-white"></div>
+          <div className="w-1 bg-white h-52"></div>
           <div>
             <h1 className="text-3xl font-bold">{props.title}</h1>
-            <p className=" py-5 text-justify">
+            <p className="py-5 text-justify ">
             Our mental health website offers diverse services, from counseling and therapy to educational resources and community support, fostering well-being and empowerment for all individuals seeking guidance.
             </p>
           </div>

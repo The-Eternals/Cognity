@@ -10,40 +10,40 @@ const Footer = () => {
       <div className=" bg-gradient-to-r from-[#5fb47d] to bg-[#017d6e]">
         <div className="flex justify-between px-[8rem] invert py-14">
           <div className="flex items-start gap-3">
-            <img src={Logo} alt="Logo" className="w-7 cursor-pointer" />
-            <p className=" cursor-pointer text-2xl font-bold">Cognity</p>
+            <img src={Logo} alt="Logo" className="cursor-pointer w-7" />
+            <p className="text-2xl font-bold cursor-pointer ">Cognity</p>
           </div>
           <div>
-            <p className=" text-xl font-bold">Services</p>
-            <ul className=" mt-6">
-              <li className=" flex gap-2 py-1"><p className="cursor-pointer">Psychotherapy</p></li>
-              <li className=" flex gap-2 py-1"><p className="cursor-pointer">Mental Counseling</p></li>
-              <li className=" flex gap-2 py-1"><p className="cursor-pointer">Support Groups</p></li>
-              <li className=" flex gap-2 py-1"><p className="cursor-pointer">Case Management</p></li>
+            <p className="text-xl font-bold ">Services</p>
+            <ul className="mt-6 ">
+              <li className="flex gap-2 py-1 "><p className="cursor-pointer">Psychotherapy</p></li>
+              <li className="flex gap-2 py-1 "><p className="cursor-pointer">Mental Counseling</p></li>
+              <li className="flex gap-2 py-1 "><p className="cursor-pointer">Support Groups</p></li>
+              <li className="flex gap-2 py-1 "><p className="cursor-pointer">Case Management</p></li>
             </ul>
           </div>
           <div>
-            <p className=" text-xl font-bold cursor-pointer">Contact</p>
-            <ul className=" mt-6">
-              <li className=" flex gap-2 justify-start items-center py-1">
-                <i className="fa-solid fa-phone cursor-pointer"></i>
-                <p className=" cursor-pointer">+911234567890</p>
+            <p className="text-xl font-bold cursor-pointer ">Contact</p>
+            <ul className="mt-6 ">
+              <li className="flex items-center justify-start gap-2 py-1 ">
+                <i className="cursor-pointer fa-solid fa-phone"></i>
+                <p className="cursor-pointer ">+911234567890</p>
               </li>
-              <li className=" flex gap-2 justify-start items-center py-1">
-                <i className="fa-solid fa-envelope cursor-pointer"></i>
-                <p className=" cursor-pointer">rola@gmail.com</p>
+              <li className="flex items-center justify-start gap-2 py-1 ">
+                <i className="cursor-pointer fa-solid fa-envelope"></i>
+                <p className="cursor-pointer ">help.cognity@gmail.com</p>
               </li>
-              <li className=" flex gap-2 justify-start items-center py-1">
-                <i className="fa-solid fa-location-dot cursor-pointer"></i>
-                <p className=" cursor-pointer">Chh Sambhajinagar.</p>
+              <li className="flex items-center justify-start gap-2 py-1 ">
+                <i className="cursor-pointer fa-solid fa-location-dot"></i>
+                <p className="cursor-pointer ">Chh Sambhajinagar.</p>
               </li>
             </ul>
           </div>
           <div>
-            <p className=" text-xl font-bold cursor-pointer">Links</p>
-            <ul className=" mt-6">
-              <li className=" flex gap-2 py-1 cursor-pointer">Privacy Policy</li>
-              <li className=" flex gap-2 py-1 cursor-pointer">Term Of Use</li>
+            <p className="text-xl font-bold cursor-pointer ">Links</p>
+            <ul className="mt-6 ">
+              <li className="flex gap-2 py-1 cursor-pointer ">Privacy Policy</li>
+              <li className="flex gap-2 py-1 cursor-pointer ">Term Of Use</li>
             </ul>
           </div>
         </div>
